@@ -1,0 +1,88 @@
+/* footer */
+
+.footer-logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* about-section */
+
+#about-section {
+    padding: 100px 0px;
+}
+
+/* operations-section */
+
+#operations-section {
+    margin: 200px auto;
+}
+
+#each-operation {
+    width: 30%;
+    margin: 0px auto;
+}
+
+/* create section */
+
+.new-entry {
+    margin: 80px auto;
+    width: 50%;
+}
+
+.new-entry-heading {
+    margin-bottom: 30px;
+}
+
+#new-entry-button {
+    margin-top: 20px;
+}
+
+/* Read section */
+
+.view-box {
+    margin: 80px auto;
+    width: 50%;
+}
+
+.view-header {
+    margin-bottom: 30px;
+}
+
+.view-table-header {
+    font-weight: bold;
+}
+
+.col-color {
+    background-color: lightgrey;
+}
+
+hr {
+    padding: 0px;
+}
+
+/* edit section */
+
+.edit-box {
+    margin: 80px auto;
+    width: 55%;
+}
+
+.edit-header {
+    margin-bottom: 30px;
+}
+
+.edit-table-header {
+    font-weight: bold;
+}
+
+.edit-icon {
+    margin: 0px 25px;
+}
+
+.edit-button {
+    border: none;
+    background-color: white;
+    padding: 0px;
+    margin-top: 0px;
+}

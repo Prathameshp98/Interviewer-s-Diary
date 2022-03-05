@@ -1,0 +1,68 @@
+<%- include("partials/header"); -%>
+
+<body>
+
+
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal">Interviewer's Diary</h1>
+                <p class="lead fw-normal">An interactive and User Friendly tool which helps the company to manage its Job applications easily, while 
+                    ensuring complete data privacy.
+                </p>
+                <a class="btn btn-outline-secondary" href="#">Know More</a>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+
+        <div id="operations-section" class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-6 border-bottom">What Can You Do</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+                <div id="each-operation" class="col-md-4">
+                    <div class="feature-icon bg-light bg-gradient">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#collection" /></svg>
+                    </div>
+                    <img src="/images/add.png" alt="">
+                    <h2>Add Candidates</h2>
+                    <p>This Option enables you to add and maintain the records of a new applicant, ensuring that the data isn't duplicate.</p>
+                    <form action="/add">
+                        <button class="btn btn-secondary btn-md" type="submit">Get Started</button>
+                    </form>
+                </div>
+
+                <div id="each-operation" class="col-md-4">
+                    <div class="feature-icon bg-light bg-gradient">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#toggles2" /></svg>
+                    </div>
+                    <img src="/images/view.png" alt="">
+                    <h2>View Candidates</h2>
+                    <p>Want the see currently under process applications. This displays a tabular view of the records in complete readable format.</p>
+                    <form action="/view">
+                        <button class="btn btn-secondary btn-md" type="submit">Get Started</button>
+                    </form>
+                </div>
+
+                <div id="each-operation" class="col-md-4">
+                    <div class="feature-icon bg-light bg-gradient">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#toggles2" /></svg>
+                    </div>
+                    <img src="/images/edit.png" alt="">
+                    <h2>Edit Candidates</h2>
+                    <p>The candidate record can be updated as well as can be deleted here. While updating it also checks for duplicate data.</p>
+                    <form action="/edit">
+                        <button class="btn btn-secondary btn-md" type="submit">Get Started</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <%- include("partials/footer"); -%>

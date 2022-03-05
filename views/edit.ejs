@@ -1,0 +1,50 @@
+<%- include("partials/operations_header"); -%>
+
+<div class="edit-box">
+    <h1 class="edit-header display-4"><%= length %> Record/s Found</h1>
+    
+    <div class="row">
+        <div class="col-3">
+            <p class="edit-table-header">First Name</p>
+        </div>
+        <div class="col-2">
+            <p class="edit-table-header">Last Name</p>
+        </div>
+        <div class="col-2">
+            <p class="edit-table-header">Phone</p>
+        </div>
+        <div class="col-2">
+            <p class="edit-table-header">Applied For</p>
+        </div>
+        <div class="col-1">
+            <p class="edit-table-header">Rating</p>
+        </div>
+    </div>
+    <hr>
+    <% foundItems.forEach(function(foundItem){ %>
+        <div class="row">
+            <div class="col-3">
+                <p><%= foundItem.firstName %></p>
+            </div>
+            <div class="col-2">
+                <p><%= foundItem.lastName %></p>
+            </div>
+            <div class="col-2">
+                <p><%= foundItem.phone %></p>
+            </div>
+            <div class="col-2">
+                <p><%= foundItem.applied %></p>
+            </div>
+            <div class="col-1">
+                <p><%= foundItem.rating %></p>
+            </div>
+            <div class="col-2">
+                <a href="/edit/1/<%= foundItem._id %>"><img class="edit-icon" src="/images/editing.png" name="key" value="<%= foundItem.phone %>" alt="edit-icon" /></a>
+                <a href="/edit/2/<%= foundItem._id %>"><img class="delete-icon" src="/images/delete.png" name="key" value="<%= foundItem.phone %>" alt="delete-icon" /></a>
+            </div>
+        </div>
+        <hr>
+    <% }); %>
+</div>
+
+<%- include("partials/footer"); -%>

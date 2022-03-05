@@ -1,0 +1,50 @@
+<%- include("partials/operations_header"); -%>
+
+<div class="new-entry">
+    <form action="/update" method="POST">
+        <h1 class="new-entry-heading">EDIT CANDIDATE</h1>
+        <div class="row">
+            <div class="form-group col-6">
+                <label>First Name</label>
+                <input type="text" class="form-control" name="firstName" id="" placeholder="<%= firstName %>">
+                <input type="hidden" name="old_firstName" value="<%= firstName %>">
+            </div>
+            <div class="form-group col-6">
+                <label>Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="" placeholder="<%= lastName %>">
+                <input type="hidden" name="old_lastName" value="<%= lastName %>">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" class="form-control" name="phone" pattern="[0-9]{10}" id="" placeholder="<%= phone %>">
+            <input type="hidden" name="old_phone" value="<%= phone %>">
+        </div>
+        <div class="form-group">
+            <label>Applied For</label>
+            <select class="form-control" name="applied" id="">
+                <option value="" disabled selected><%= applied %></option>
+                <option value="Front-End">Front-End</option>
+                <option value="Back-End">Back-End</option>
+                <option value="Full-Stack">Full-Stack</option>
+            </select>
+            <input type="hidden" name="old_applied" value="<%= applied %>">
+        </div>
+        <div class="form-group">
+            <label>Rating</label>
+            <select class="form-control" name="rating" id="">
+                <option value="" disabled selected><%= rating %></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <input type="hidden" name="old_rating" value="<%= rating %>">
+        </div>
+        <input type="hidden" name="key" value="<%= key %>">
+        <button id="new-entry-button" class="btn btn-secondary btn-md" type="submit">Update</button>
+    </form>
+</div>
+
+<%- include("partials/operations_header"); -%>

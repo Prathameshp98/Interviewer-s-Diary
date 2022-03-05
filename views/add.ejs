@@ -1,0 +1,44 @@
+<%- include("partials/operations_header"); -%>
+
+<div class="new-entry">
+    <form action="/add" method="POST">
+        <h1 class="new-entry-heading">NEW CANDIDATE REGISTRATION</h1>
+        <div class="row">
+            <div class="form-group col-6">
+                <label>First Name</label>
+                <input type="text" class="form-control" name="firstName" id="" placeholder="" required>
+            </div>
+            <div class="form-group col-6">
+                <label>Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="" placeholder="" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" class="form-control" name="phone" pattern="[0-9]{10}" id="" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label>Applied For</label>
+            <select class="form-control" name="applied" id="" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="Front-End">Front-End</option>
+                <option value="Back-End">Back-End</option>
+                <option value="Full-Stack">Full-Stack</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Rating</label>
+            <select class="form-control" name="rating" id="" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <button id="new-entry-button" class="btn btn-secondary btn-md" type="submit">Register</button>
+    </form>
+</div>
+
+<%- include("partials/operations_header"); -%>
